@@ -1,42 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Pemrograman Web</title>
-	<style type="text/css">
-		h1 {
-			color: blue;
-			cursor: pointer;
-			transition: 0.2s;
-		}
-		h1:hover {
-			color: red;
-			letter-spacing: 2px;
-		}
-
-		img	{
-			width: 4cm;
-			border-radius: 50%;
-			box-shadow: 1px 1px 4px gray;
-			padding: 5px;
-			background: white;
-			margin: 15px;
-			transition: 0.2s;
-			opacity: 75%;
-
-		}
-
-		img:hover {
-			transform: scale(1.2);
-			opacity: 100%;
-			box-shadow: 1px 1px 6px red;
-		}
-	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Portofolio</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<h1>Hello World</h1>
-	<p>Saya Prima Bramada Putra, NIM: 41215691</p>
-	<button onclick="alert('Hello World Javascript!')">Hello Javascript!</button>
+	<!-- navigasi -->
+	<div class="navigasi">
+		<ul>
+			<li><a href="#beranda" class="sekrol">BERANDA</a></li>
+			<li><a href="#tentang" class="sekrol">TENTANG</a></li>
+			<li><a href="#tugas" class="sekrol">TUGAS</a></li>
+			<li><a href="#kontak" class="sekrol">KONTAK</a></li>
+		</ul>
+	</div>
+	<!-- akhir navigasi -->
 
-	<img src="prima.jpeg">
+	<!-- pembungkus -->
+	<div class="pembungkus">
+		<img src="image/fotoku.jpeg" alt="fotoku" width="200" id="beranda">
+		<h2 class="pemilik">Prima Bramada Putra</h2>
+		<p class="quotes">"Menjadi dewasa ternyata tidak seindah yang dibayangkan, terkadang banyak sedih nya dan bahagia nya"</p>
+
+		<div class="tentang" id="tentang">
+			<h3>TENTANG</h3> 
+			<p class="isiTentang">Hallo nama saya Prima Bramada Putra, saya dari prodi Teknik Informatika STMIK IKMI Cirebon</p>
+		</div>
+		<div class="tugas" id="tugas">
+			<h3>TUGAS</h3>
+			<div class="p03 p0Semua">
+				<h4>P03</h4>
+				<ul>
+					<li><a href="https://bastianroyan.github.io/" target="_blank">Membuat Github Pages</a></li>
+					<li><a href="https://bastianroyan.github.io/p03/tugasp03_table.html" target="_blank">HTML Table Sederhana</a></li>
+					<li><a href="https://bastianroyan.github.io/p03css/tugasp03_csstable.html" target="_blank">HTML Table CSS</a></li>
+					<li><a href="https://bastianroyan.github.io/p03jquery/tugasp03_tablejquery.html" target="_blank">HTML Table JQuery Challenge</a></li>
+					<li><a href="https://bastianroyan.github.io/p03form-lv1/" target="_blank">Formulir Level 1 Basic HTML Form</a></li>
+				</ul>
+			</div>
+			<div class="p04 p0Semua">
+				<h4>P04</h4>
+				<ul>
+					<li><a href="https://bastianroyan.github.io/p04css-basic/" target="_blank">Formulir Level 2 Basic CSS HTML Form</a></li>
+					<li><a href="https://bastianroyan.github.io/p04css-responsive/" target="_blank">Formulir Level 3 Responsive CSS HTML Form</a></li>
+					<li><a href="https://bastianroyan.github.io/p04-static-kop-surat/" target="_blank">Kop Surat Static using CSS</a></li>
+				</ul>
+			</div>
+			<div class="p05 p0Semua">
+				<h4>P05</h4>
+				<ul>
+					<li><a href="https://bastianroyan.github.io/p05-jquery-delete/" target="_blank">JQuery FadeOut When Delete</a></li>
+					<li><a href="https://bastianroyan.github.io/p05-jquery-sliding/" target="_blank">JQuery Sliding</a></li>
+				</ul>
+			</div>
+			<div class="float-hilang"></div>
+			<div class="p06 p0Semua">
+				<h4>P06</h4>
+				<ul>
+					<li><a href="#">JQuery Add/Remove Class for SPA Menu</a></li>
+				</ul>
+			</div>
+			<div class="p07 p0Semua">
+				<h4>P07</h4>
+				<ul>
+					<li><a href="https://bastianroyan.github.io/">P07 SPA Github Pages</a></li>
+				</ul>
+			</div>
+			<div class="float-hilang"></div>
+		</div>
+		<div class="kontak" id="kontak">
+			<h3>KONTAK</h3>
+			<p>Berikut adalah akun sosial media saya</p>
+			<a href="https://m.facebook.com/profile.php?id=100044805922458" target="_blank" class="sosmed"><div class="facebook"></div></a>
+			<a href="https://www.instagram.com/prima_bramada/" target="_blank"  class="sosmed"><div class="instagram"></div></a>
+			<a href="https://www.tiktok.com/search?q=cirebonsadvibes&t=1665210490153" target="_blank" class="sosmed"><div class="whatsapp"></div></a>
+			<a href="https://wa.me/6285624629504" target="_blank" class="sosmed"><div class="tiktok"></div></a>
+			<div class="hapus-float"></div>
+
+		</div>
+	</div>
+	<!-- akhir pembungkus -->
+	
+	<!-- footer -->
+	<div class="footer">
+		<p>&copy; primabramada 2022</p>
+	</div>
+	<!-- akhir footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
